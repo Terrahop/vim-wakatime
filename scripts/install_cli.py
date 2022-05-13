@@ -167,7 +167,7 @@ def getHomeFolder():
         if len(sys.argv) == 2:
             HOME_FOLDER = sys.argv[-1]
         else:
-            HOME_FOLDER = os.path.realpath(os.environ.get('WAKATIME_HOME') or os.path.expanduser('~'))
+            HOME_FOLDER = os.path.realpath(os.environ.get('WAKATIME_HOME') or os.path.expanduser('~/.config/wakatime'))
 
     return HOME_FOLDER
 
